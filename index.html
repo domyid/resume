@@ -14,7 +14,7 @@
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-	<title>Resume Rapat</title>
+	<title>Risalah Pertemuan</title>
 
 	<link href="static/css/app.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
 			<nav class="navbar navbar-expand navbar-light navbar-bg">
                 <img src="" alt="">
                 <img src="src/img/icons/logo ulbi.png" alt="" style="width: 40px; margin-right: 5px;">
-                <a class="mt-2 h4"><b>Resume Rapat</b></a>
+                <a class="mt-2 h4"><b>Risalah Pertemuan</b></a>
 			</nav>
 			<!-- Navbar End -->
 
@@ -37,9 +37,11 @@
 			<div class="container">
                 <div class="feedback" id="feedback">
                 <h5 class="center-aligned" style="text-align: center;">
-                    <b>Product Owner:</b>
+                    <b>Notulen:</b><div id="petugas" class="teks-tebal-tengah"></div>
                 </h5>
-                <div id="petugas" class="teks-tebal-tengah"></div>
+                  <div id="solusi" class="solusi"></div>
+                  <textarea id="komentar" placeholder="Tulis risalah lengkap rapat disini..."></textarea>
+                  
                   <div class="rating">
                     <input type="radio" name="rating" id="rating-5" value="5">
                     <label for="rating-5"></label>
@@ -139,8 +141,9 @@
                       </div>
                     </div>
                   </div>
-                  <div id="solusi" class="solusi"></div>
-                  <textarea id="komentar" placeholder="Tambahkan komentar atau ulasan tambahan..."></textarea>
+                  
+                  
+                  
                   <button type="button" class="button" id="tombol">Kirim Resume!</button>
                 </div>
               </div>
