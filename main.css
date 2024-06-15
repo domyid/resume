@@ -156,3 +156,22 @@
     font-weight: bold;
     text-align: center;
   }
+
+
+  textarea {
+    border: 2px solid #f2f2f2;
+    margin: 8px 0;
+    outline: none;
+    padding: 10px;
+    min-height: 100px;
+    width: 100%;
+}
+
+textarea:focus {
+    border-color: #007bff;
+}
+
+  #komentar {
+    width: 100%;
+    box-sizing: border-box; /* ensures padding and borders are included in the element's total width and height */
+  }
