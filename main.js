@@ -12,6 +12,7 @@ function runafterGet(result){
     console.log(result);
     setInner("petugas",result.petugas);
     setInner("solusi",result.solusi);
+    setInner("komentar",result.komentar);
 }
 
 function runOnRating(){
@@ -26,6 +27,6 @@ function runOnRating(){
 
 function responseFunction(result){
     console.log(result);
-    setInner("feedback","Feedback berhasil dikirim terima kasih. "+result.info);
+    setInner("feedback","Risalah berhasil dikirim terima kasih. "+result.info);
 
 }
