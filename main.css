@@ -3,7 +3,6 @@
   }
   
   .container {
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
     display: flex;
     flex-wrap: wrap;
     height: 80vh;
@@ -163,8 +162,7 @@
     margin: 8px 0;
     outline: none;
     padding: 10px;
-    min-height: 100px;
-    width: 100%;
+    min-height: 300px;
 }
 
 textarea:focus {
