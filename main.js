@@ -7,6 +7,7 @@ import {getCookie} from "https://cdn.jsdelivr.net/gh/jscroot/cookie@0.0.1/croot.
 get("https://api.do.my.id/notif/ux/getlaporan/"+getHash(),runafterGet)
 
 onClick("tombol",runOnRating);
+onClick("tombolpresensi",copyCode);
 
 function runafterGet(result){
     console.log(result);
@@ -29,4 +30,15 @@ function responseFunction(result){
     console.log(result);
     setInner("feedback","Risalah berhasil dikirim terima kasih. "+result.info);
 
+}
+
+// Function to copy the code to clipboard
+function copyCode() {
+    const codeElement = document.getElementById('code');
+    const code = codeElement.textContent;
+    navigator.clipboard.writeText(code).then(() => {
+        alert('Code copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
 }
