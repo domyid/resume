@@ -14,6 +14,7 @@ function runafterGet(result){
     setInner("petugas",result.petugas);
     setInner("solusi",result.solusi);
     setInner("komentar",result.komentar);
+    setInner("code","https://wa.me/62895601060000?text=-.-T@$kl1$t-.-"+getHash()+"|||++");
 }
 
 function runOnRating(){
