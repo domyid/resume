@@ -23,7 +23,7 @@ function runOnRating(){
     let datarating={
         id:getHash(),
         rating:Number(getValueRadio("rating")),
-        komentar:getValue("komentar")
+        komentar:easymde.value()
     }
     setInner("feedback","Mohon tunggu sebentar data sedang dikirim");
     postWithToken("https://api.do.my.id/notif/ux/postrating","login",getCookie("login"),datarating,responseFunction);
