@@ -20,6 +20,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="main.css">  
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
 </head>
 
 <body>
@@ -151,6 +157,11 @@
 		</div>
 	</div>
 	<script src="static/js/app.js"></script>
+  <script>
+    const easymde = new EasyMDE({
+      element: document.getElementById('my-text-area'),
+    });
+  </script>
     <script async src="main.js" type="module"></script>
 </body>
 
