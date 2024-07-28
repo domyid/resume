@@ -26,7 +26,7 @@ function runOnRating(){
         komentar:easymde.value()
     }
     if (datarating.komentar===""){
-        alert('Catatan Notulen Rapat Wajib Diisi');
+        alert('Risalah Rapat Wajib Diisi');
     }else{
         setInner("feedback","Mohon tunggu sebentar data sedang dikirim");
         postJSON("https://api.do.my.id/notif/ux/postrating","login",getCookie("login"),datarating,responseFunction);
