@@ -25,8 +25,13 @@ function runOnRating(){
         rating:Number(getValueRadio("rating")),
         komentar:easymde.value()
     }
-    setInner("feedback","Mohon tunggu sebentar data sedang dikirim");
-    postJSON("https://api.do.my.id/notif/ux/postrating","login",getCookie("login"),datarating,responseFunction);
+    if (datarating.komentar===""){
+        alert('Catatan Notulen Rapat Wajib Diisi');
+    }else{
+        setInner("feedback","Mohon tunggu sebentar data sedang dikirim");
+        postJSON("https://api.do.my.id/notif/ux/postrating","login",getCookie("login"),datarating,responseFunction);
+    }
+    
 }
 
 function responseFunction(result){
