@@ -32,10 +32,10 @@ function runOnRating(){
 function responseFunction(result){
     console.log(result);
     if (result.status==200){
-        setInner("feedback","Risalah berhasil dikirim terima kasih. "+response.data.info);
+        setInner("feedback","Risalah berhasil dikirim terima kasih. "+result.data.info);
     } else{
         console.log(result.data);
-        setInner("feedback","Terjadi kesalahan: "+response.data);
+        setInner("feedback","Terjadi kesalahan: "+result.data);
     }
     
 
