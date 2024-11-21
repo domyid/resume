@@ -16,7 +16,7 @@ function runafterGet(result){
     if (result.komentar != null) {
         easymde.value(result.komentar);
     }
-    setInner("code","https://wa.me/62895601060000?text=-.-T@$kl1$t-.-"+getHash()+"|||++");
+    setInner("code","https://wa.me/628999710040?text=-.-T@$kl1$t-.-"+getHash()+"|||++");
 }
 
 function runOnRating(){
